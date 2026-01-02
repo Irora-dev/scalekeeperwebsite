@@ -29,7 +29,7 @@ const footerLinks = {
 
 export default function Footer() {
   return (
-    <footer className="bg-background-dark border-t border-text-muted/10">
+    <footer className="bg-cosmic-black border-t border-nebula-lavender/10">
       <div className="section-container py-16">
         <div className="grid md:grid-cols-2 lg:grid-cols-6 gap-12 lg:gap-8">
           {/* Brand */}
@@ -39,19 +39,19 @@ export default function Footer() {
                 <svg viewBox="0 0 40 40" className="w-full h-full" fill="none">
                   <path
                     d="M20 4C14 4 10 8 8 12C6 16 6 22 10 26C14 30 20 32 24 30C28 28 32 24 32 18C32 12 28 8 24 6C22 5 21 4.5 20 4Z"
-                    className="fill-accent-lime"
+                    className="fill-nebula-cyan"
                   />
                   <path
                     d="M20 8C16 8 13 11 12 14C11 17 12 21 15 24C18 27 22 28 25 26C28 24 30 20 29 16C28 12 25 9 22 8C21 7.5 20.5 7.5 20 8Z"
-                    className="fill-primary-green"
+                    className="fill-nebula-purple"
                   />
                 </svg>
               </div>
               <span className="text-lg font-bold">
-                Scale<span className="text-accent-lime">Keeper</span>
+                Scale<span className="text-nebula-cyan">Keeper</span>
               </span>
             </Link>
-            <p className="text-text-muted text-sm leading-relaxed max-w-xs">
+            <p className="text-nebula-lavender/50 text-sm leading-relaxed max-w-xs">
               The complete herpetoculture management platform. Track, monitor, and care for your
               collection with confidence.
             </p>
@@ -60,25 +60,25 @@ export default function Footer() {
             <div className="flex gap-3 mt-6">
               <Link
                 href="#ios"
-                className="flex items-center gap-2 px-4 py-2 bg-background-section border border-text-muted/20 rounded-lg hover:border-text-muted/40 transition-colors"
+                className="flex items-center gap-2 px-4 py-2 bg-card-bg border border-nebula-lavender/10 rounded-lg hover:border-nebula-purple/30 transition-colors"
               >
                 <svg className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
                 </svg>
                 <div className="text-left">
-                  <p className="text-[10px] text-text-muted leading-none">Download on the</p>
+                  <p className="text-[10px] text-nebula-lavender/40 leading-none">Download on the</p>
                   <p className="text-sm font-semibold leading-tight">App Store</p>
                 </div>
               </Link>
               <Link
                 href="#android"
-                className="flex items-center gap-2 px-4 py-2 bg-background-section border border-text-muted/20 rounded-lg hover:border-text-muted/40 transition-colors"
+                className="flex items-center gap-2 px-4 py-2 bg-card-bg border border-nebula-lavender/10 rounded-lg hover:border-nebula-purple/30 transition-colors"
               >
                 <svg className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M3 20.5v-17c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5v17c0 .83-.67 1.5-1.5 1.5S3 21.33 3 20.5zm15 0v-17c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5v17c0 .83-.67 1.5-1.5 1.5s-1.5-.67-1.5-1.5zM7 21h10V3H7v18z" />
                 </svg>
                 <div className="text-left">
-                  <p className="text-[10px] text-text-muted leading-none">Get it on</p>
+                  <p className="text-[10px] text-nebula-lavender/40 leading-none">Get it on</p>
                   <p className="text-sm font-semibold leading-tight">Google Play</p>
                 </div>
               </Link>
@@ -93,7 +93,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-text-muted hover:text-text-primary transition-colors text-sm"
+                    className="text-nebula-lavender/50 hover:text-nebula-cyan transition-colors text-sm"
                   >
                     {link.label}
                   </Link>
@@ -109,7 +109,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-text-muted hover:text-text-primary transition-colors text-sm"
+                    className="text-nebula-lavender/50 hover:text-nebula-cyan transition-colors text-sm"
                   >
                     {link.label}
                   </Link>
@@ -125,7 +125,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-text-muted hover:text-text-primary transition-colors text-sm"
+                    className="text-nebula-lavender/50 hover:text-nebula-cyan transition-colors text-sm"
                   >
                     {link.label}
                   </Link>
@@ -141,7 +141,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-text-muted hover:text-text-primary transition-colors text-sm"
+                    className="text-nebula-lavender/50 hover:text-nebula-cyan transition-colors text-sm"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -154,25 +154,25 @@ export default function Footer() {
         </div>
 
         {/* Bottom */}
-        <div className="mt-16 pt-8 border-t border-text-muted/10 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-text-muted text-sm">
+        <div className="mt-16 pt-8 border-t border-nebula-lavender/10 flex flex-col md:flex-row justify-between items-center gap-4">
+          <p className="text-nebula-lavender/40 text-sm">
             &copy; {new Date().getFullYear()} ScaleKeeper. All rights reserved.
           </p>
 
           <div className="flex items-center gap-6 text-sm">
-            <Link href="#privacy" className="text-text-muted hover:text-text-primary transition-colors">
+            <Link href="#privacy" className="text-nebula-lavender/40 hover:text-nebula-cyan transition-colors">
               Privacy Policy
             </Link>
-            <Link href="#terms" className="text-text-muted hover:text-text-primary transition-colors">
+            <Link href="#terms" className="text-nebula-lavender/40 hover:text-nebula-cyan transition-colors">
               Terms of Service
             </Link>
-            <Link href="#cookies" className="text-text-muted hover:text-text-primary transition-colors">
+            <Link href="#cookies" className="text-nebula-lavender/40 hover:text-nebula-cyan transition-colors">
               Cookie Policy
             </Link>
           </div>
 
           {/* Trust Badge */}
-          <div className="flex items-center gap-2 text-text-muted text-xs">
+          <div className="flex items-center gap-2 text-nebula-lavender/40 text-xs">
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path
                 strokeLinecap="round"

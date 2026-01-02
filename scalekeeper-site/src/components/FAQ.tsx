@@ -37,8 +37,8 @@ export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <section id="faq" className="py-20 md:py-28 bg-background-section/50">
-      <div className="section-container">
+    <section id="faq" className="py-20 md:py-28 relative nebula-pattern">
+      <div className="section-container relative z-10">
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
@@ -51,15 +51,15 @@ export default function FAQ() {
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className="border border-text-muted/10 rounded-xl overflow-hidden bg-background-dark/50"
+              className="border border-nebula-lavender/10 rounded-xl overflow-hidden bg-card-bg/50"
             >
               <button
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                className="w-full px-6 py-5 flex items-center justify-between text-left hover:bg-background-section/30 transition-colors"
+                className="w-full px-6 py-5 flex items-center justify-between text-left hover:bg-nebula-purple/5 transition-colors"
               >
-                <span className="font-semibold text-text-primary pr-4">{faq.question}</span>
+                <span className="font-semibold text-white pr-4">{faq.question}</span>
                 <svg
-                  className={`w-5 h-5 text-text-muted shrink-0 transition-transform ${
+                  className={`w-5 h-5 text-nebula-lavender shrink-0 transition-transform ${
                     openIndex === index ? 'rotate-180' : ''
                   }`}
                   fill="none"
@@ -80,7 +80,7 @@ export default function FAQ() {
                   openIndex === index ? 'max-h-96' : 'max-h-0'
                 }`}
               >
-                <p className="px-6 pb-5 text-text-secondary leading-relaxed">
+                <p className="px-6 pb-5 text-nebula-lavender/70 leading-relaxed">
                   {faq.answer}
                 </p>
               </div>

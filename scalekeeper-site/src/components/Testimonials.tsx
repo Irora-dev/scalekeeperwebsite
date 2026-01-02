@@ -21,8 +21,12 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section className="py-20 md:py-28">
-      <div className="section-container">
+    <section className="py-20 md:py-28 relative">
+      {/* Decorative orbs */}
+      <div className="orb-cyan w-64 h-64 top-1/4 left-1/6" />
+      <div className="orb-magenta w-48 h-48 bottom-1/3 right-1/4" />
+
+      <div className="section-container relative z-10">
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
@@ -38,7 +42,7 @@ export default function Testimonials() {
               className="card p-6 md:p-8 flex flex-col"
             >
               {/* Quote */}
-              <blockquote className="text-text-secondary leading-relaxed flex-grow mb-6">
+              <blockquote className="text-nebula-lavender/70 leading-relaxed flex-grow mb-6">
                 &ldquo;{testimonial.quote}&rdquo;
               </blockquote>
 
@@ -47,7 +51,7 @@ export default function Testimonials() {
                 {Array.from({ length: testimonial.rating }).map((_, i) => (
                   <svg
                     key={i}
-                    className="w-5 h-5 text-warning-amber"
+                    className="w-5 h-5 text-nebula-gold"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                   >
@@ -58,13 +62,13 @@ export default function Testimonials() {
 
               {/* Author */}
               <div className="flex items-center gap-4">
-                {/* Avatar Placeholder */}
-                <div className="w-12 h-12 bg-primary-green/30 rounded-full flex items-center justify-center text-lg">
+                {/* Avatar */}
+                <div className="w-12 h-12 bg-nebula-purple/30 rounded-full flex items-center justify-center text-lg border border-nebula-purple/30">
                   {testimonial.name.charAt(0)}
                 </div>
                 <div>
-                  <p className="font-semibold text-text-primary">{testimonial.name}</p>
-                  <p className="text-text-muted text-sm">{testimonial.title}</p>
+                  <p className="font-semibold text-white">{testimonial.name}</p>
+                  <p className="text-nebula-lavender/50 text-sm">{testimonial.title}</p>
                 </div>
               </div>
             </div>

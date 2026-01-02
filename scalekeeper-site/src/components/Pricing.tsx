@@ -60,36 +60,36 @@ export default function Pricing() {
   const [isYearly, setIsYearly] = useState(true);
 
   return (
-    <section id="pricing" className="py-20 md:py-28 bg-background-section/50">
-      <div className="section-container">
+    <section id="pricing" className="py-20 md:py-28 relative nebula-pattern">
+      <div className="section-container relative z-10">
         {/* Section Header */}
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
             Simple Pricing for <span className="gradient-text">Every Keeper</span>
           </h2>
-          <p className="text-text-secondary text-lg max-w-2xl mx-auto">
+          <p className="text-nebula-lavender/70 text-lg max-w-2xl mx-auto">
             Start free. Upgrade when you&apos;re ready. No surprises.
           </p>
         </div>
 
         {/* Billing Toggle */}
         <div className="flex justify-center items-center gap-4 mb-12">
-          <span className={`text-sm ${!isYearly ? 'text-text-primary' : 'text-text-muted'}`}>
+          <span className={`text-sm ${!isYearly ? 'text-white' : 'text-nebula-lavender/50'}`}>
             Monthly
           </span>
           <button
             onClick={() => setIsYearly(!isYearly)}
-            className="relative w-14 h-7 bg-background-dark rounded-full border border-text-muted/20 transition-colors"
+            className="relative w-14 h-7 bg-cosmic-black rounded-full border border-nebula-lavender/20 transition-colors"
           >
             <div
-              className={`absolute top-1 w-5 h-5 bg-accent-lime rounded-full transition-all ${
+              className={`absolute top-1 w-5 h-5 bg-nebula-purple rounded-full transition-all shadow-lg shadow-nebula-purple/30 ${
                 isYearly ? 'left-8' : 'left-1'
               }`}
             />
           </button>
-          <span className={`text-sm ${isYearly ? 'text-text-primary' : 'text-text-muted'}`}>
+          <span className={`text-sm ${isYearly ? 'text-white' : 'text-nebula-lavender/50'}`}>
             Yearly
-            <span className="ml-2 text-accent-lime text-xs">Save up to 31%</span>
+            <span className="ml-2 text-nebula-cyan text-xs">Save up to 31%</span>
           </span>
         </div>
 
@@ -100,14 +100,14 @@ export default function Pricing() {
               key={index}
               className={`relative rounded-2xl p-6 md:p-8 transition-all ${
                 plan.highlighted
-                  ? 'bg-gradient-to-b from-primary-green/20 to-background-section border-2 border-accent-lime/50 scale-105 shadow-xl shadow-accent-lime/10'
-                  : 'bg-background-section/80 border border-text-muted/10'
+                  ? 'bg-gradient-to-b from-nebula-purple/20 to-card-bg border-2 border-nebula-purple/50 scale-105 shadow-xl shadow-nebula-purple/20'
+                  : 'bg-card-bg/80 border border-nebula-lavender/10'
               }`}
             >
               {/* Badge */}
               {plan.badge && (
                 <div className="absolute -top-3 left-1/2 -translate-x-1/2">
-                  <span className="bg-accent-lime text-background-dark text-xs font-bold px-3 py-1 rounded-full">
+                  <span className="bg-nebula-purple text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg shadow-nebula-purple/30">
                     {plan.badge}
                   </span>
                 </div>
@@ -115,7 +115,7 @@ export default function Pricing() {
 
               {/* Plan Name */}
               <h3 className="text-xl font-bold mb-2">{plan.name}</h3>
-              <p className="text-text-muted text-sm mb-4">{plan.tagline}</p>
+              <p className="text-nebula-lavender/50 text-sm mb-4">{plan.tagline}</p>
 
               {/* Price */}
               <div className="mb-6">
@@ -123,12 +123,12 @@ export default function Pricing() {
                   ${isYearly ? plan.price.yearly : plan.price.monthly}
                 </span>
                 {plan.price.monthly > 0 && (
-                  <span className="text-text-muted text-sm">
+                  <span className="text-nebula-lavender/50 text-sm">
                     /{isYearly ? 'year' : 'month'}
                   </span>
                 )}
                 {isYearly && plan.price.monthly > 0 && (
-                  <p className="text-accent-lime text-xs mt-1">
+                  <p className="text-nebula-cyan text-xs mt-1">
                     Save {Math.round((1 - plan.price.yearly / (plan.price.monthly * 12)) * 100)}%
                   </p>
                 )}
@@ -140,7 +140,7 @@ export default function Pricing() {
                 className={`block w-full text-center py-3 rounded-lg font-semibold transition-all ${
                   plan.highlighted
                     ? 'btn-primary'
-                    : 'bg-background-dark border border-text-muted/20 hover:border-accent-lime/50 text-text-primary'
+                    : 'bg-cosmic-black border border-nebula-lavender/20 hover:border-nebula-purple/50 text-white'
                 }`}
               >
                 {plan.cta}
@@ -148,7 +148,7 @@ export default function Pricing() {
 
               {/* Trial Note */}
               {plan.price.monthly > 0 && (
-                <p className="text-text-muted text-xs text-center mt-3">14-day free trial</p>
+                <p className="text-nebula-lavender/40 text-xs text-center mt-3">14-day free trial</p>
               )}
 
               {/* Features */}
@@ -156,7 +156,7 @@ export default function Pricing() {
                 {plan.features.map((feature, i) => (
                   <li key={i} className="flex items-start gap-3 text-sm">
                     <svg
-                      className="w-5 h-5 text-accent-lime shrink-0 mt-0.5"
+                      className="w-5 h-5 text-nebula-cyan shrink-0 mt-0.5"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -168,7 +168,7 @@ export default function Pricing() {
                         d="M5 13l4 4L19 7"
                       />
                     </svg>
-                    <span className="text-text-secondary">{feature}</span>
+                    <span className="text-nebula-lavender/70">{feature}</span>
                   </li>
                 ))}
               </ul>
@@ -177,9 +177,9 @@ export default function Pricing() {
         </div>
 
         {/* Enterprise Note */}
-        <p className="text-center text-text-muted mt-12">
+        <p className="text-center text-nebula-lavender/50 mt-12">
           Need multi-user access or API integration?{' '}
-          <Link href="#contact" className="text-accent-lime hover:underline">
+          <Link href="#contact" className="text-nebula-cyan hover:text-nebula-magenta transition-colors">
             Contact us for Professional pricing →
           </Link>
         </p>
