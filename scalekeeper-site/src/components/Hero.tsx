@@ -73,11 +73,12 @@ export default function Hero() {
 
           {/* App Mockup - 40% */}
           <div className="lg:col-span-2 relative">
-            <div className="relative animate-float">
+            <div className="relative">
               {/* Phone Frame */}
               <div className="relative mx-auto w-64 md:w-72 lg:w-80">
-                {/* Glow effect */}
-                <div className="absolute inset-0 bg-nebula-purple/20 rounded-[3rem] blur-2xl" />
+                {/* Edge glow effect */}
+                <div className="absolute -inset-4 bg-gradient-to-br from-nebula-purple/30 via-nebula-cyan/20 to-nebula-magenta/25 rounded-[3.5rem] blur-2xl opacity-60" />
+                <div className="absolute -inset-1 bg-nebula-purple/15 rounded-[3rem] blur-xl" />
 
                 {/* Phone body */}
                 <div className="relative bg-cosmic-deep rounded-[2.5rem] p-2 shadow-2xl border border-nebula-lavender/20">
