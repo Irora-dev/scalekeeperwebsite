@@ -22,7 +22,7 @@ const plans = [
     name: 'Keeper',
     price: { monthly: 12, yearly: 99 },
     tagline: 'For serious hobbyists',
-    cta: 'Start Free Trial',
+    cta: 'Get Started',
     highlighted: true,
     badge: 'Most Popular',
     features: [
@@ -40,7 +40,7 @@ const plans = [
     name: 'Breeder',
     price: { monthly: 35, yearly: 299 },
     tagline: 'For hobby breeders',
-    cta: 'Start Free Trial',
+    cta: 'Get Started',
     highlighted: false,
     features: [
       'Everything in Keeper, plus:',
@@ -136,7 +136,7 @@ export default function Pricing() {
 
               {/* CTA */}
               <Link
-                href="#trial"
+                href="#download"
                 className={`block w-full text-center py-3 rounded-lg font-semibold transition-all ${
                   plan.highlighted
                     ? 'btn-primary'

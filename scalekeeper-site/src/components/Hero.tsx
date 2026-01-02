@@ -36,14 +36,14 @@ export default function Hero() {
 
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link href="#trial" className="btn-primary text-lg">
+              <Link href="#download" className="btn-primary text-lg">
                 <span>🦎</span>
-                <span>Start Free Trial</span>
+                <span>Download Free</span>
               </Link>
-              <Link href="#demo" className="btn-secondary text-lg">
-                Watch Demo
+              <Link href="#benefits" className="btn-secondary text-lg">
+                Learn More
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
                 </svg>
               </Link>
             </div>
@@ -54,19 +54,19 @@ export default function Hero() {
                 <svg className="w-4 h-4 text-nebula-cyan" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                 </svg>
-                Free 14-day trial
+                Free to download
               </span>
               <span className="flex items-center gap-2">
                 <svg className="w-4 h-4 text-nebula-cyan" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                 </svg>
-                No credit card required
+                iOS & Android
               </span>
               <span className="flex items-center gap-2">
                 <svg className="w-4 h-4 text-nebula-cyan" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                 </svg>
-                Cancel anytime
+                Upgrade anytime
               </span>
             </div>
           </div>

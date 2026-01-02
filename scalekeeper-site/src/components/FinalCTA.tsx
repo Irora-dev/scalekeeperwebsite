@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function FinalCTA() {
   return (
-    <section id="trial" className="py-20 md:py-28 relative overflow-hidden">
+    <section id="download" className="py-20 md:py-28 relative overflow-hidden">
       {/* Decorative orbs */}
       <div className="orb-magenta w-[500px] h-[500px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
       <div className="orb-purple w-80 h-80 top-1/4 left-1/4" />
@@ -21,15 +21,15 @@ export default function FinalCTA() {
 
           <Link href="#signup" className="btn-primary text-lg inline-flex animate-pulse-glow">
             <span>🦎</span>
-            <span>Start Your Free Trial</span>
+            <span>Download Free</span>
           </Link>
 
           <p className="mt-6 text-nebula-lavender/50 text-sm flex flex-wrap justify-center gap-4">
-            <span>No credit card required</span>
+            <span>Available on iOS & Android</span>
             <span className="text-nebula-lavender/30">•</span>
-            <span>14-day free trial</span>
+            <span>Free to start</span>
             <span className="text-nebula-lavender/30">•</span>
-            <span>Cancel anytime</span>
+            <span>Upgrade anytime</span>
           </p>
         </div>
       </div>
