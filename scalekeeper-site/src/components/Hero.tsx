@@ -23,7 +23,7 @@ export default function Hero() {
             </div>
 
             {/* Headline */}
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-balance">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-balance">
               The App That Knows Your{' '}
               <span className="gradient-text">Animals Like You Do</span>
             </h1>
