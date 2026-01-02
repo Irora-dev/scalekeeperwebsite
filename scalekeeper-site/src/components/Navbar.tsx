@@ -56,7 +56,7 @@ export default function Navbar() {
           {/* CTA Button */}
           <div className="hidden md:block">
             <Link href="#download" className="btn-primary text-sm">
-              Download Free
+              Download For Free
             </Link>
           </div>
 
@@ -103,7 +103,7 @@ export default function Navbar() {
               className="btn-primary w-full text-center text-sm"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Download Free
+              Download For Free
             </Link>
             {navLinks.map((link) => (
               <Link

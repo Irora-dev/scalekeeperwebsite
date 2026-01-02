@@ -21,7 +21,7 @@ export default function FinalCTA() {
 
           <Link href="#signup" className="btn-primary text-lg inline-flex animate-pulse-glow">
             <span>🦎</span>
-            <span>Download Free</span>
+            <span>Download For Free</span>
           </Link>
 
           <p className="mt-6 text-nebula-lavender/50 text-sm flex flex-wrap justify-center gap-4">

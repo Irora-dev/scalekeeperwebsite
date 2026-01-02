@@ -37,7 +37,7 @@ export default function Hero() {
             <div className="flex flex-col sm:flex-row gap-4">
               <Link href="#download" className="btn-primary text-lg">
                 <span>🦎</span>
-                <span>Download Free</span>
+                <span>Download For Free</span>
               </Link>
               <Link href="#benefits" className="btn-secondary text-lg">
                 Learn More
