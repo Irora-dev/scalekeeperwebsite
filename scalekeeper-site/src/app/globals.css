@@ -115,10 +115,7 @@
   }
 
   .gradient-text {
-    background: linear-gradient(135deg, var(--color-nebula-magenta), var(--color-nebula-purple), var(--color-nebula-cyan));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: var(--color-nebula-cyan);
   }
 
   .card {
