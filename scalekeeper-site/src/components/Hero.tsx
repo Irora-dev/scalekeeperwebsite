@@ -24,14 +24,13 @@ export default function Hero() {
 
             {/* Headline */}
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-balance">
-              Stop Losing Track of{' '}
-              <span className="gradient-text">Your Collection</span>
+              The App That Knows Your{' '}
+              <span className="gradient-text">Animals Like You Do</span>
             </h1>
 
             {/* Subheadline */}
             <p className="text-lg md:text-xl text-nebula-lavender/80 max-w-2xl leading-relaxed">
-              ScaleKeeper replaces your scattered spreadsheets, forgotten notebooks, and anxious
-              guessing with one beautiful app that knows your animals as well as you do.
+              Your collection deserves better than spreadsheets. Track feedings, weights, sheds, and health—all in one beautiful app.
             </p>
 
             {/* CTAs */}
