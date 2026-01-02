@@ -35,18 +35,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-2">
             <Link href="/" className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8">
-                <svg viewBox="0 0 40 40" className="w-full h-full" fill="none">
-                  <path
-                    d="M20 4C14 4 10 8 8 12C6 16 6 22 10 26C14 30 20 32 24 30C28 28 32 24 32 18C32 12 28 8 24 6C22 5 21 4.5 20 4Z"
-                    className="fill-nebula-cyan"
-                  />
-                  <path
-                    d="M20 8C16 8 13 11 12 14C11 17 12 21 15 24C18 27 22 28 25 26C28 24 30 20 29 16C28 12 25 9 22 8C21 7.5 20.5 7.5 20 8Z"
-                    className="fill-nebula-purple"
-                  />
-                </svg>
-              </div>
+              <span className="text-2xl">🦎</span>
               <span className="text-lg font-bold">
                 Scale<span className="text-nebula-cyan">Keeper</span>
               </span>
